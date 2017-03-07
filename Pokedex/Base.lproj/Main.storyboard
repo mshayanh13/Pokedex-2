@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="j6j-2x-KeT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="j6j-2x-KeT">
                                 <rect key="frame" x="0.0" y="99" width="320" height="469"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJk-N9-qva">
@@ -32,11 +32,11 @@
                                     <constraint firstAttribute="height" constant="55" id="ntk-kN-yNW"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-Sh-5RN">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-Sh-5RN">
                                 <rect key="frame" x="0.0" y="55" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9FX-K8-SeW">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9FX-K8-SeW">
                                 <rect key="frame" x="16" y="119" width="288" height="429"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c13-QU-6W3">
@@ -46,7 +46,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Sj3-Su-4E9">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Sj3-Su-4E9" customClass="PokeCell" customModule="Pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="129" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -78,6 +78,10 @@
                                             <constraint firstAttribute="trailing" secondItem="HEn-7K-v2Q" secondAttribute="trailing" id="q8Y-EF-8Tn"/>
                                             <constraint firstItem="wpM-oP-jUI" firstAttribute="top" secondItem="HEn-7K-v2Q" secondAttribute="bottom" id="sgl-Iv-bbm"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="wpM-oP-jUI" id="btP-CD-nBB"/>
+                                            <outlet property="thumbImage" destination="HEn-7K-v2Q" id="eXM-T6-Ong"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -89,7 +93,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9FX-K8-SeW" secondAttribute="bottom" constant="20" id="Eqv-XA-XWV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j6j-2x-KeT" secondAttribute="bottom" id="F6O-1U-ob8"/>
                             <constraint firstItem="j7H-Sh-5RN" firstAttribute="top" secondItem="SJk-N9-qva" secondAttribute="bottom" id="G60-hc-T3X"/>
-                            <constraint firstItem="j6j-2x-KeT" firstAttribute="top" secondItem="j7H-Sh-5RN" secondAttribute="bottom" id="NDE-zp-YPW"/>
                             <constraint firstItem="j7H-Sh-5RN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QXg-bm-FVl"/>
                             <constraint firstItem="9FX-K8-SeW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vje-lf-U8X"/>
                             <constraint firstAttribute="trailing" secondItem="j7H-Sh-5RN" secondAttribute="trailing" id="WCw-NF-9iy"/>
