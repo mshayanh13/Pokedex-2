@@ -17,6 +17,7 @@
 		103239971E6E4B33006C93CE /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103239961E6E4B33006C93CE /* PokeCell.swift */; };
 		103239BC1E6F13A1006C93CE /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103239BB1E6F13A1006C93CE /* csv.swift */; };
 		103239C11E6F1C62006C93CE /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 103239C01E6F1C62006C93CE /* music.mp3 */; };
+		103239C51E6F22A3006C93CE /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103239C41E6F22A3006C93CE /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		103239BB1E6F13A1006C93CE /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		103239BF1E6F1A2D006C93CE /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
 		103239C01E6F1C62006C93CE /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		103239C41E6F22A3006C93CE /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				1032397F1E6E3754006C93CE /* ViewController.swift */,
+				103239C41E6F22A3006C93CE /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				103239971E6E4B33006C93CE /* PokeCell.swift in Sources */,
 				103239801E6E3754006C93CE /* ViewController.swift in Sources */,
 				1032397E1E6E3754006C93CE /* AppDelegate.swift in Sources */,
+				103239C51E6F22A3006C93CE /* PokemonDetailVC.swift in Sources */,
 				103239921E6E3EC1006C93CE /* Pokemon.swift in Sources */,
 				103239BC1E6F13A1006C93CE /* csv.swift in Sources */,
 			);
@@ -361,6 +365,7 @@
 				1032398E1E6E3754006C93CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

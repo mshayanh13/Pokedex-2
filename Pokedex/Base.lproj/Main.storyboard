@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntr-CA-N9q">
-                                        <rect key="frame" x="99" y="5" width="122" height="45"/>
+                                        <rect key="frame" x="99" y="5.5" width="122" height="45"/>
                                         <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="32"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -138,11 +138,30 @@
                     <connections>
                         <outlet property="collection" destination="9FX-K8-SeW" id="5Av-sf-jI5"/>
                         <outlet property="searchBar" destination="j7H-Sh-5RN" id="wDq-9g-Djm"/>
+                        <segue destination="SRN-Wt-T4b" kind="show" identifier="PokemonDetailVC" id="UfD-Cr-2eB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33.75" y="34.859154929577464"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="gBl-Ca-kiT">
+            <objects>
+                <viewController id="SRN-Wt-T4b" customClass="PokemonDetailVC" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XrH-vD-JrB"/>
+                        <viewControllerLayoutGuide type="bottom" id="uWt-Vr-4Qn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QL8-vn-qYg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9f-dF-d5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="37"/>
         </scene>
     </scenes>
     <resources>
